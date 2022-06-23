@@ -23,13 +23,13 @@ class Item:
 
     @property
     def quality(self):
-        """quality attribute as a property"""
+        """GETTER for quality: quality attribute as a property"""
         return self._quality
 
     @quality.setter
     def quality(self, new_value: int):
 
-        """quality is between 0 and 50"""
+        """SETTER for quality: quality is between 0 and 50"""
         if new_value < 0:
             new_value = 0
         if new_value > 50:
